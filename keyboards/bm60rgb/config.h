@@ -19,6 +19,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
+/*
+  This will disable debug messages, while `CONSOLE_ENABLE = yes` in rules.mk will 
+  enable messages in general.
+*/
+#define NO_DEBUG
+
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x4B50 // "KP"
 #define PRODUCT_ID      0xEF8C
