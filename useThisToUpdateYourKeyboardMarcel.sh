@@ -1,7 +1,9 @@
 #!/bin/sh
 
 # Update stuff
-brew tap homebrew/cask-drivers &&  brew install --cask qmk-toolbox
+# brew tap homebrew/cask-drivers &&  brew install --cask qmk-toolbox
 
 # Flash it
-qmk flash -kb bm60rgb -km custom
+# bm60rgb
+# dztech/dz60rgb_ansi/v2
+qmk flash -kb "$1" -km marhaupe
